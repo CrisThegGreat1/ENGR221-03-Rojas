@@ -1,0 +1,86 @@
+2.1.1 pseudocode)
+
+Get the row and column of cell
+
+If the column is 0:
+    Return None because there is no cell to the west
+
+Otherwise:
+    Decrease the column by 1
+    Return the cell on the board at that row and column
+
+2.2.1 pseudocode)
+
+move_player_right:
+    Get the east neighbor of the player's current cell
+    If an east neighbor exists:
+        Move the player to that cell
+
+move_player_left:
+    Get the west neighbor of the player's current cell
+    If a west neighbor exists:
+        Move the player to that cell
+
+move_player_up:
+    Get the north neighbor of the player's current cell
+    If a north neighbor exists:
+        Move the player to that cell
+
+move_player_down:
+    Get the south neighbor of the player's current cell
+    If a south neighbor exists:
+        Move the player to that cell
+
+    
+
+2.3.1 pseudocode)
+
+Find a random row and column on the board.
+
+Get the cell located at that row and column.
+
+Check if the selected cell is empty.
+
+If the cell is empty:
+    Change the cell type to FOOD.
+    Add the cell to the list of food cells.
+    Decrease the number of empty cells by 1.
+
+If the cell is not empty:
+    Do not add food to that cell.
+
+2.3.2 pseudocode)
+
+eat_food(cell):
+
+    Remove the food cell from the food list
+
+    Increase the score by 1
+
+    Increase the number of empty cells by 1
+
+
+2.4.1 Pseudocode)
+
+Find the cell in the bottom-right corner of the board.
+Check what is currently in that cell.
+If the player is there, end the game.
+If food is there, remove the food and update the food list.
+If the cell is empty, update the number of empty cells.
+If there is already an enemy there, do not add another enemy.
+Otherwise, change the cell into an enemy and add it to the enemies list.
+
+2.4.2 pseudocode)
+
+
+Get the enemy from the enemies list using index idx.
+Check what is currently in the destination cell.
+If the player is there, end the game.
+If food is there, remove the food and update the food list.
+If another enemy is there, do not move.
+Otherwise, make the enemy's old cell empty.
+Move the enemy to the destination cell.
+Update the enemies list to store the enemy's new cell.
+
+2.4.3 Pseudocode)
+

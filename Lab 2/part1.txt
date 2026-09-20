@@ -1,0 +1,36 @@
+A) How do we accsess values from the prefrences file?
+
+It looks like they create a class for the word "Prefrences" so in the actual gameData.py file they import
+the Class Prefrences by using the comand import. The line goes "from prefrences import Prefrences"
+this is essentially saying, from the file/folder prefrences import the class Prefrences. then when 
+I when to check the file it did exactly that. So they created the class Around the word Prefrences and 
+any word after that set as an integer became part of its class
+
+B) What type is self.board?
+
+well I know that x = [] is a list and the values after the equal sign contain the same [] so I think its
+a list. More spefically a type dimensional list. Each layer of the bracket [] creates a dimension
+since theres two sets "[[]]" it means its two dimensional. You usally use it to contain several list
+inside a list.
+
+c) what type is each element of the self.board?
+
+they would be classes as well. Row would be the class that holds the horizontal postion 
+of the game while colume holds the vertical postion. each of those classes must also 
+have multiple integers within there class that create the 2D layers of the game.
+
+how do we access a cell on the board?
+
+To access a spefic cell on the board you simply use the syntax self.board[0][0] where ther first digit 
+represents the row and the second the colume. looking at that line self.board = [[cell(row,col)]]
+thats essentially what its saying. Its saying anytime I type "self.board" im reffering to the class
+cell which is made up off two other classes which hold integers. the [0][0] list the integer 
+that your reffering too 
+
+how do we change the type of cell?
+
+so it looks like first you spefically assign a value to a spefic cell combination so when that cell
+combination is generated then it changes that tile piece into what ever you want it to be.
+looks like become_player is a def function which is a function spefically assigned to a class
+so when self.board is equal to [0][0] then it activates the function which changes the cell 
+type. They most likely incopertated this into the cell class.

@@ -20,12 +20,12 @@ class Preferences:
     SCORE_FONT_SIZE = 25
     SCORE_FONT = pygame.font.SysFont(None, SCORE_FONT_SIZE)
     SCORE_FONT_COLOR = pygame.Color('black')
-    SCORE_TEXT = "Fish eaten: {}"
+    SCORE_TEXT = "Bands collected: {}"
 
     GAMEOVER_FONT_SIZE = 50
     GAMEOVER_FONT = pygame.font.SysFont(None, GAMEOVER_FONT_SIZE)
     GAMEOVER_FONT_COLOR = pygame.Color('red')
-    GAMEOVER_TEXT = "You were eaten by a seal!\nPress any key to exit."
+    GAMEOVER_TEXT = "You were caught by ICE!\nPress any key to exit."
 
 
     ##########

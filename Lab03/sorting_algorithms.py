@@ -1,6 +1,6 @@
 """ TODO
 Author: Cristofer Rojas
-Add a description 
+
 """
 
 import random
@@ -77,13 +77,41 @@ class SortingAlgorithms:
                 
 
        def insertion_sort(self):
+           # Defines a function called insertion_sort.
+
+    # self refers to the current object
        "sort array using insertion sort"
        for i in range(1, len(self.array)):
+    # for creates a loop.
+
+        # i tracks the current index (position).
+
+        # len(self.array) returns the number of elements.
+
+        # range(1, ...) starts at index 1, not 0.
            j=i
+            # Sets j equal to the current value of i.
+
+        # j will move backward through the array.
            while j >0 and self.array[j - 1]:
-               self.array[j], self.array[j-1]=self.array[j-1],self.array[j]
+             # while repeats as long as both conditions are true.
+
+            # j > 0 means we haven't reached index 0.
+
+            # self.array[j] is the current number.
+
+            # self.array[j-1] is the number to its left.
+
+            # < checks if the current number is smaller.
+               self.array[j], self.array[j-1]=self.array[j-1],self.array[j]   # Swaps the two numbers in the array.
                yield i, j
+                # Pauses the function and provides i and j.
+
+            # Allows the sorting animation to update.
                j-=1
+                # Same as j = j - 1.
+
+            # Moves j one position to the left.
 
     def bubble_sort(self):
        "sort the array using bubble sort"
